@@ -1,0 +1,60 @@
+:root {
+    --fonte-estilosa: "Lobster Two";
+
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.cabecalho{
+    width: 100%;
+    height: 160%;
+    background: url(img/wpp.png) no-repeat center;
+    background-size: cover;
+
+}
+
+.cabecalho_img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.img_logo {
+    width: 160px;
+    height: 160px;
+    
+}
+
+.cabecalho_apresentacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15%;
+
+}
+
+.cabecalho_apresentacao-texto {
+    color: #e0e0e0;
+    font-family: var(--fonte-estilosa);
+
+}
+
+.cabecalho_apresentacao-titulo {
+    font-size: 2em;
+    font-weight: 700;
+
+}
+
+.cabecalho_apresentacao-paragrafo {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 1.5em;
+
+}
+
