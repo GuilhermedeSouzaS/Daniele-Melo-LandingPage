@@ -1,5 +1,6 @@
 :root {
     --fonte-estilosa: "Lobster Two";
+    --fonte-principal: "Oswald"
 
 }
 
@@ -9,15 +10,17 @@ html, body {
     margin: 0;
     padding: 0;
     color: #e0e0e0;
-    font-family: "Oswald";
+    font-family: var(--fonte-principal);
+    font-weight: 300;
 
 }
 
 .cabecalho{
     width: 100%;
-    height: 160%;
+    height: 190%;
     background: url(img/wpp.png) no-repeat center;
     background-size: cover;
+    padding-bottom: 5em;
 
 }
 
@@ -41,20 +44,15 @@ html, body {
 
 }
 
-.cabecalho_apresentacao-texto {
-    font-family: var(--fonte-estilosa);
-
-}
-
 .cabecalho_apresentacao-titulo {
     font-size: 2em;
     font-weight: 700;
+    font-family: var(--fonte-estilosa);
 
 }
 
 .cabecalho_apresentacao-paragrafo {
     font-size: 1em;
-    font-weight: 400;
     padding-top: 1.5em;
 
 }
@@ -67,14 +65,36 @@ html, body {
 .formulario {
     display: flex;
     flex-direction: column;
+    padding: 1em;
+    background-color: #141414;
+    box-shadow: rgb(0, 0, 0) 0px 19px 38px, rgb(0, 0, 0) 0px 15px 12px;
+    border-radius: 10px;
+    width: 40%;
 
 }
 
-.form {
+.formulario_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 1em;
+
+}
+
+.formulario_titulo {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    font-weight: 500;
+
+}
+
+.formulario_input {
     margin-bottom: 1em;
     margin-top: 0.5em;
     border-radius: 2px;
     border-style: none;
+    padding: 0.4em;
 
 }
 
