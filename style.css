@@ -8,6 +8,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    color: #e0e0e0;
+    font-family: "Oswald";
 
 }
 
@@ -26,8 +28,8 @@ html, body {
 }
 
 .img_logo {
-    width: 160px;
-    height: 160px;
+    width: 50%;
+    height: 50%;
     
 }
 
@@ -40,7 +42,6 @@ html, body {
 }
 
 .cabecalho_apresentacao-texto {
-    color: #e0e0e0;
     font-family: var(--fonte-estilosa);
 
 }
@@ -55,6 +56,30 @@ html, body {
     font-size: 1em;
     font-weight: 400;
     padding-top: 1.5em;
+
+}
+
+.cabecalho_form {
+    margin: 15%;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    border-radius: 2px;
+    border-style: none;
+
+}
+
+.form:hover {
+    border-radius: 7px;
 
 }
 
