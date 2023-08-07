@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    color: #e0e0e0;
+    color: #141414;
     font-family: var(--fonte-principal);
     font-weight: 300;
 
@@ -18,7 +18,7 @@ html, body {
 .cabecalho{
     width: 100%;
     height: 100%;
-    background: url(img/wpp.png) no-repeat center;
+    background: url(img/wpp1.png) no-repeat center;
     background-size: cover;
     padding-bottom: 5em;
 
@@ -31,8 +31,8 @@ html, body {
 }
 
 .img_logo {
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     
 }
 
@@ -96,8 +96,8 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    background-color: #141414;
-    box-shadow: rgb(0, 0, 0) 0px 19px 38px, rgb(0, 0, 0) 0px 15px 12px;
+    background-color: rgba(224, 224, 224, 0.5);
+    box-shadow: rgb(20, 20, 20) 0px 19px 38px, rgb(20, 20, 20) 0px 15px 12px;
     border-radius: 10px;
     width: 40%;
     height: 68%;
@@ -115,11 +115,25 @@ html, body {
     bottom: 18px;
     font-size: 1em;
     transition: all .5s ease;
+    color: #141414;
+
+}
+
+.label_mensagem {
+    color: #141414;
 
 }
 
 .formulario input:focus + label {
-    color: #eb66fa;
+    color: #ff8f78;
+    bottom: 32px;
+    font-size: .7em;
+    transition: all .5s ease;
+
+}
+
+.formulario input:hover + label {
+    color: #ff8f78;
     bottom: 32px;
     font-size: .7em;
     transition: all .5s ease;
@@ -131,8 +145,8 @@ html, body {
     margin-top: 0.5em;
     border: none;
     background: transparent;
-    border-bottom: solid 1px #eb66fa;
-    color: #e0e0e0;
+    border-bottom: solid 1px #ff8f78;
+    color: #141414;
     display: block;
 
 }
@@ -140,7 +154,7 @@ html, body {
 .formulario_input:focus {
     border: none;
     outline: none;
-    border-bottom: solid 1px #eb66fa;
+    border-bottom: solid 1px #ff8f78;
 
 }
 
@@ -151,9 +165,9 @@ html, body {
 
 .formulario_botao {
     border-color: #e0e0e0;
-    color: #e0e0e0;
+    color: #141414;
     background: transparent;
-    border: solid 1px #eb66fa;
+    border: solid 1px #ff8f78;
     height: 1.8em;
     font-size: 1em;
     font-weight: 600;
@@ -165,7 +179,7 @@ html, body {
 .formulario_botao:hover {
     border-style: none;
     transition-duration: 0.5s;
-    background: #eb66fa;
+    background: #ff8f78;
     color: #e0e0e0;
     border-color: #141414;
     cursor: pointer;
@@ -174,7 +188,7 @@ html, body {
 
 .conheca {
     width: 100%;
-    background-image: url(img/Design\ sem\ nome.png);
+    background-image: url(img/fundo\ doodle.png);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -196,7 +210,7 @@ html, body {
 .servicos {
     width: 100%;
     height: 700px;
-    background-color: #141414;
+    background-color: #e0e0e0;
     display: flex;
     justify-content: center;
 
@@ -206,6 +220,7 @@ html, body {
     font-size: 3em;
     font-weight: 400;
     padding-top: 1em;
+    color: #141414;
 
 }
 
@@ -213,6 +228,6 @@ html, body {
 .rodape {
     width: 100%;
     height: 100px;
-    background-color: #141414;
+    background-color: #e0e0e0;
 
 }
