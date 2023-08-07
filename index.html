@@ -14,23 +14,33 @@
 
         <header class="cabecalho">
             <section class="cabecalho_img"><img class="img_logo" src="img/logotipo.png" alt="logotipo do salão"></section>
-            <div class="apresentacao_formulario">
-                <section class="cabecalho_apresentacao">
-                    <h1 class="cabecalho_apresentacao-texto cabecalho_apresentacao-titulo">Beleza e Estética: Descubra o Seu Potencial!</h1>
-                    <p class="cabecalho_apresentacao-texto cabecalho_apresentacao-paragrafo">Desperte sua verdadeira beleza e empodere-se com nossos tratamentos de estética para revelar o melhor de você!</p>
+            <div class="apresentacao-formulario">
+                <section class="apresentacao">
+                    <h1 class="apresentacao-texto apresentacao-titulo">Beleza e Estética: Descubra o Seu Potencial!</h1>
+                    <p class="apresentacao-texto apresentacao-paragrafo">Desperte sua verdadeira beleza e empodere-se com nossos tratamentos de estética para revelar o melhor de você!</p>
                 </section>
-                <section class="cabecalho_form">
+                <section class="secao_formulario">
                     <div class="formulario_texto">
                         <h2 class="formulario_titulo">Preencha seus dados</h2>
                         <p class="formulario_subtitulo">Fique ligado para receber as melhores ofertas!</p>
                     </div>
                     <form class="formulario" action="" method="post">
-                        <label>Nome</label>
-                        <input class="formulario_input formulario_nome" type="text" name="name" placeholder="Insira seu nome" required>
-                        <label>E-mail</label>
-                        <input class="formulario_input formulario_email" type="email" name="email" placeholder="exemplo@exemplo.com" required>
-                        <label>Mensagem</label>
-                        <textarea class="formulario_input formulario_mensagem" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                        <div>
+                            <input class="formulario_input formulario_nome" id="name" type="text" name="name" required>
+                            <label for="name">Nome</label>
+                        </div>
+                        <div>
+                            <input class="formulario_input formulario_tel" id="number" type="number" name="name" required>
+                            <label for="number">Tel.</label>
+                        </div>
+                        <div>
+                            <input class="formulario_input formulario_email" id="email" type="email" name="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+
+                        <label class="label_mensagem">Mensagem</label>
+                        <textarea class="formulario_input formulario_mensagem" name="message" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+
                         <button class="formulario_botao" type="submit">Enviar</button>
                     </form>
                 </section>

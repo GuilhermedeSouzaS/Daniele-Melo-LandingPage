@@ -36,14 +36,14 @@ html, body {
     
 }
 
-.apresentacao_formulario {
+.apresentacao-formulario {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
 
-.cabecalho_apresentacao {
+.apresentacao {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -53,37 +53,25 @@ html, body {
 
 }
 
-.cabecalho_apresentacao-titulo {
+.apresentacao-titulo {
     font-size: 2em;
     font-weight: 700;
     font-family: var(--fonte-estilosa);
 
 }
 
-.cabecalho_apresentacao-paragrafo {
+.apresentacao-paragrafo {
     font-size: 1em;
     padding-top: 1.5em;
 
 }
 
-.cabecalho_form {
+.secao_formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    background-color: #141414;
-    box-shadow: rgb(0, 0, 0) 0px 19px 38px, rgb(0, 0, 0) 0px 15px 12px;
-    border-radius: 10px;
-    width: 40%;
-    height: 68%;
-    min-width: 270px;
+    height: fit-content;
 
 }
 
@@ -104,23 +92,55 @@ html, body {
 
 }
 
-.formulario_input {
-    margin-bottom: 1em;
-    margin-top: 0.5em;
-    border-radius: 2px;
-    border-style: none;
-    padding: 0.4em;
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: #141414;
+    box-shadow: rgb(0, 0, 0) 0px 19px 38px, rgb(0, 0, 0) 0px 15px 12px;
+    border-radius: 10px;
+    width: 40%;
+    height: 68%;
+    min-width: 270px;
 
 }
 
-.formulario_input:hover {
-    border-radius: 10px;
-    transition-duration: 0.5s;
+.formulario > div {
+    position: relative;
+
+}
+
+.formulario label:not(.label_mensagem) {
+    position: absolute;
+    bottom: 18px;
+    font-size: 1em;
+    transition: all .5s ease;
+
+}
+
+.formulario input:focus + label {
+    color: #eb66fa;
+    bottom: 32px;
+    font-size: .7em;
+    transition: all .5s ease;
+
+}
+
+.formulario_input {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    border: none;
+    background: transparent;
+    border-bottom: solid 1px #eb66fa;
+    color: #e0e0e0;
+    display: block;
 
 }
 
 .formulario_input:focus {
-    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #eb66fa;
 
 }
 
@@ -132,21 +152,23 @@ html, body {
 .formulario_botao {
     border-color: #e0e0e0;
     color: #e0e0e0;
-    background-color: #141414;
-    height: 2.5em;
+    background: transparent;
+    border: solid 1px #eb66fa;
+    height: 1.8em;
     font-size: 1em;
     font-weight: 600;
+    margin: 1em;
+    transition-duration: 0.5s;
 
 }
 
 .formulario_botao:hover {
     border-style: none;
     transition-duration: 0.5s;
-    background: rgb(157,94,28);
-    background: linear-gradient(90deg, rgba(157,94,28,1) 0%, rgba(226,202,139,1) 50%, rgba(166,94,31,1) 100%);
-    color: #141414;
+    background: #eb66fa;
+    color: #e0e0e0;
     border-color: #141414;
-
+    cursor: pointer;
 
 }
 
