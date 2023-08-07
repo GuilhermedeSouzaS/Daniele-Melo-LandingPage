@@ -1,3 +1,10 @@
+@keyframes animacao {
+    0% {width: 70px; height: 70px;}
+    50% {width: 80px; height: 80px;}
+    100% {width: 70px; height: 70px;}
+
+}
+
 :root {
     --fonte-estilosa: "Lobster Two";
     --fonte-principal: "Oswald"
@@ -174,6 +181,22 @@ html, body {
     color: #e0e0e0;
     border-color: #141414;
     cursor: pointer;
+
+}
+
+.icone {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+}
+
+.icone_img {
+    width: 70px;
+    height: 70px;
+    animation-name: animacao;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
 
 }
 
