@@ -124,15 +124,7 @@ html, body {
 
 }
 
-.formulario input:focus + label {
-    color: #ff8f78;
-    bottom: 32px;
-    font-size: .7em;
-    transition: all .5s ease;
-
-}
-
-.formulario input:hover + label {
+.formulario input:focus + label, .formulario input:hover + label, .formulario input:valid + label {
     color: #ff8f78;
     bottom: 32px;
     font-size: .7em;
