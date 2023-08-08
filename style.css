@@ -387,7 +387,7 @@ html, body {
     .apresentacao {
         text-align: center;
         padding: 1em;
-
+        min-height: 330px;
 
     }
 
