@@ -379,17 +379,16 @@ html, body {
 @media (max-width: 893px) {
 
     .img_logo {
-        width: 40%;
-        height: 40%;
+        width: 50%;
+        height: 50%;
 
     }
 
     .apresentacao {
         text-align: center;
-        padding: 5em;
+        padding: 3em;
 
 
     }
 
 }
-
