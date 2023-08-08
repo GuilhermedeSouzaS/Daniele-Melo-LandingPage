@@ -379,14 +379,14 @@ html, body {
 @media (max-width: 893px) {
 
     .img_logo {
-        width: 50%;
-        height: 50%;
+        width: 60%;
+        height: 60%;
 
     }
 
     .apresentacao {
         text-align: center;
-        padding: 3em;
+        padding: 1em;
 
 
     }
