@@ -6,6 +6,13 @@
     display: flex;
     justify-content: center;
     padding-bottom: 0;
+    flex-direction: column;
+
+}
+
+.img_logo {
+    width: 250px;
+    height: 250px;
 
 }
 
@@ -16,6 +23,7 @@
     align-items: center;
     margin-bottom: 0;
     height: 100vh;
+    padding: 0 20px 0 20px;
 
 }
 
