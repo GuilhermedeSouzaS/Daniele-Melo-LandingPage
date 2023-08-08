@@ -261,19 +261,43 @@ html, body {
     height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
     background-color: rgba(224, 224, 224, 0.5);
     box-shadow: rgba(20, 20, 20, 0.25) 0px 14px 28px, rgba(20, 20, 20, 0.22) 0px 10px 10px;
     border-radius: 10px;
+    padding-bottom: 1em;
+    transition-duration: .5s;
 
+}
+
+.card:hover {
+    scale: 1.2;
+    transition-duration: .5s;
 
 }
 
 .card_img {
     width: 250px;
-    
+    border-radius: 10px 10px 0 0;
+
+}
+
+.card_texto {
+    padding: 1em;
+
+}
+
+.card_titulo {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px #141414;
+
+}
+
+.card_paragrafo {
+    font-size: 1.1em;
 
 }
 
