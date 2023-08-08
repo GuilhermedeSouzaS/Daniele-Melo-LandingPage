@@ -378,6 +378,20 @@ html, body {
 
 @media (max-width: 893px) {
 
+    @keyframes face-icon {
+        0% {background-image: url(img/icone-face-azul.svg);}
+        50% {background-image: url(img/icone-face-preto.svg);}
+        100% {background-image: url(img/icone-face-azul.svg);}
+
+    }
+
+    @keyframes insta-icon {
+        0% {background-image: url(img/icone-insta-colorido.svg);}
+        50% {background-image: url(img/icone-insta-preto.svg);}
+        100% {background-image: url(img/icone-insta-colorido.svg);}
+
+    }
+
     .img_logo {
         width: 60%;
         height: 60%;
@@ -388,6 +402,20 @@ html, body {
         text-align: center;
         padding: 1em;
         min-height: 330px;
+
+    }
+
+    .icone_face {
+        animation-name: face-icon;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        
+    }
+    
+    .icone_insta {
+        animation-name: insta-icon;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
 
     }
 
