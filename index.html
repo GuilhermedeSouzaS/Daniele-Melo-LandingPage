@@ -17,7 +17,8 @@
             <div class="apresentacao-formulario">
                 <section class="apresentacao">
                     <h1 class="apresentacao-texto apresentacao-titulo">Beleza e Estética: Descubra o Seu Potencial!</h1>
-                    <p class="apresentacao-texto apresentacao-paragrafo">Desperte sua verdadeira beleza e empodere-se com nossos tratamentos de estética para revelar o melhor de você!</p>
+                    <span class="apresentacao-texto apresentacao-paragrafo" id="typed"></span>
+                    <div id="typed-strings"><p>Desperte sua verdadeira beleza e empodere-se com nossos tratamentos de estética para revelar o melhor de você!</div></p>
                 </section>
                 <section class="secao_formulario">
                     <div class="formulario_texto">
@@ -48,7 +49,7 @@
                     </form>
                 </section>
             </div>
-            <div class="icone"><img class="icone_img" src="img/icone-whats.png" alt="logotipo do whatsapp para enviar uma mensagem"></div>
+            <a href="https://api.whatsapp.com/send?phone=551127646214" target="_blank"><div class="icone-whats"><img class="icone_img" src="img/icone-whats.png" alt="logotipo do whatsapp para enviar uma mensagem"></div></a>
         </header>
         <main class="principal">
             <section class="conheca"><h2 class="conheca_texto">Conheça o melhor salão de beleza da Grande SP</h2></section>
@@ -87,7 +88,19 @@
             <section class="conheca"><h2 class="conheca_texto">Revele sua beleza interior. No nosso centro de estética, realçamos sua essência de forma natural e única.</h2></section>
         </main>
 
-        <footer class="rodape"></footer>
+        <footer class="rodape">
+            <h3 class="rodape_titulo">Conheça nossas redes sociais!</h3>
+            <div class="rodape_icones">
+                <a href="https://www.facebook.com/danielemelo.personalestetica" target="_blank"><div class="icone icone_face"></div></a>
+                <a href="https://www.instagram.com/danielemelo_oficial/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><div class="icone icone_insta"></div></a>
+            </div>
+            <p class="copy">Copyright ©️</p>
+
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+        <script src="main.js"></script>
         
     </body>
 </html> 
