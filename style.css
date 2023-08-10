@@ -55,7 +55,8 @@ html, body {
 .apresentacao {
     width: 500px;
     position: relative;
-    margin: 30px;
+    margin: 50px;
+    min-height: 300px;
 
 }
 
