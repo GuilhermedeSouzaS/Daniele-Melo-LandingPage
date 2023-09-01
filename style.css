@@ -307,7 +307,7 @@ html, body {
     box-shadow: rgba(20, 20, 20, 0.25) 0px 14px 28px, rgba(20, 20, 20, 0.22) 0px 10px 10px;
     border-radius: 10px;
     padding-bottom: 1em;
-    margin: 40px;
+    margin: 15px 40px;
     transition-duration: .5s;
 
 }
@@ -417,8 +417,6 @@ html, body {
     }
 
     /* Muda o tamanho do logotipo para mobile */
-
-
 
     .img_logo {
         width: 60%;
