@@ -418,6 +418,11 @@ html, body {
 
     /* Muda o tamanho do logotipo para mobile */
 
+    .cabecalho_img {
+        padding: 2em;
+
+    }
+
     .img_logo {
         width: 60%;
         height: 60%;
