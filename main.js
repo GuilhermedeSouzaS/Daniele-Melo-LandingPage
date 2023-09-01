@@ -10,10 +10,10 @@ ScrollReveal().reveal('.secao_formulario', { delay: 200 });
 
 var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
-    typeSpeed: 25,
+    typeSpeed: 20,
     backSpeed: 7, 
     startDelay: 1000,
     backDelay: 4000,
-    loop: true,
+    loop: false,
     loopCount: Infinity,
   });

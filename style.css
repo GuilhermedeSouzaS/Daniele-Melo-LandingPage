@@ -217,6 +217,7 @@ html, body {
     position: fixed;
     right: 30px;
     bottom: 30px;
+    z-index: 2;
 
 }
 
@@ -228,7 +229,6 @@ html, body {
     animation-name: animacao;
     animation-duration: 1.8s;
     animation-iteration-count: infinite;
-    z-index: 3;
 
 }
 
@@ -286,8 +286,8 @@ html, body {
 .servicos_cards {
     width:  100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -307,7 +307,7 @@ html, body {
     box-shadow: rgba(20, 20, 20, 0.25) 0px 14px 28px, rgba(20, 20, 20, 0.22) 0px 10px 10px;
     border-radius: 10px;
     padding-bottom: 1em;
-    margin: 20px auto;
+    margin: 40px;
     transition-duration: .5s;
 
 }
@@ -428,7 +428,7 @@ html, body {
 
     .apresentacao {
         text-align: center;
-        padding: 1em;
+        padding: 1em 1em 3em 1em;
         min-height: 330px;
 
     }
