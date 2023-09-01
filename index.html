@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniele Melo</title>
-</head>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amor Açucarado</title>
+    </head>
     <body>
 
         <header class="cabecalho">
+            <!-- Logotipo -->
             <section class="cabecalho_img"><img class="img_logo" src="img/logotipo.png" alt="logotipo do salão"></section>
             <div class="apresentacao-formulario">
+                <!-- Texto do cabeçalho -->
                 <section class="apresentacao">
-                    <h1 class="apresentacao-texto apresentacao-titulo">Beleza e Estética: Descubra o Seu Potencial!</h1>
+                    <h1 class="apresentacao-texto apresentacao-titulo">Transformando Ingredientes em Sonhos: Bem-Vindo à Nossa Confeitaria</h1>
                     <span class="apresentacao-texto apresentacao-paragrafo" id="typed"></span>
-                    <div id="typed-strings"><p>Desperte sua verdadeira beleza e empodere-se com nossos tratamentos de estética para revelar o melhor de você!</div></p>
+                    <div id="typed-strings"><p>Na nossa confeitaria, criamos magia com açúcar. Cada mordida é uma explosão de sabor que transforma momentos comuns em especiais. Venha experimentar a doçura da vida conosco.</div></p>
                 </section>
+                <!-- Formulário -->
                 <section class="secao_formulario">
                     <div class="formulario_texto">
                         <h2 class="formulario_titulo">Preencha seus dados</h2>
-                        <p class="formulario_subtitulo">Fique ligado para receber as melhores ofertas!</p>
+                        <p class="formulario_subtitulo">Envie seu orçamento!</p>
                     </div>
                     <form class="formulario" action="https://formsubmit.co/guigui.cr16@gmail.com" method="POST">
                         <input type="hidden" name="_next" value="https://guilhermedesouzas.github.io/Daniele-Melo-LandingPage/sucesso.html">
@@ -49,43 +52,70 @@
                     </form>
                 </section>
             </div>
+            <!-- Botão flutuante do Whatsapp -->
             <a href="https://api.whatsapp.com/send?phone=551127646214" target="_blank"><div class="icone-whats"><img class="icone_img" src="img/icone-whats.png" alt="logotipo do whatsapp para enviar uma mensagem"></div></a>
         </header>
         <main class="principal">
-            <section class="conheca"><h2 class="conheca_texto">Conheça o melhor salão de beleza da Grande SP</h2></section>
+            <!-- Faixa com a frase -->
+            <section class="conheca"><h2 class="conheca_texto">Onde os sonhos se tornam sabores</h2></section>
             <section class="servicos">
-                <h2 class="servicos_titulo">Descubra os procedimentos oferecidos</h2>
+
+                <!-- Catálogo com os cards -->
+                <h2 class="servicos_titulo">Catálogo</h2>
 
                 <div class="servicos_cards">
 
                     <div class="card">
-                        <img class="card_img" src="img/manicure.png" alt="Imagem de uma manicure trabalhando">
-                        <h3 class="card_texto card_titulo">Manicure</h3>
-                        <p class="card_texto card_paragrafo">Bem-vindo ao refúgio para mãos elegantes. Nossas manicures talentosas criam obras-primas únicas. Experimente o luxo da manicure e destaque sua individualidade. Nos visite hoje!</p>
+                        <img class="card_img" src="img/doces.png" alt="Imagem de uma manicure trabalhando">
+                        <h3 class="card_texto card_titulo">Doces para festa</h3>
                     </div>
 
                     <div class="card">
-                        <img class="card_img" src="img/mega-hair.png" alt="Imagem do procedimento Mega Hair">
-                        <h3 class="card_texto card_titulo">Mega Hair</h3>
-                        <p class="card_texto card_paragrafo">Descubra a transformação capilar com nosso Mega Hair. Nossos especialistas criam visuais deslumbrantes, ressaltando sua singularidade. Experimente o luxo hoje!</p>
+                        <img class="card_img" src="img/bolo.png" alt="Imagem do procedimento Mega Hair">
+                        <h3 class="card_texto card_titulo">Bolo</h3>
                     </div>
 
                     <div class="card">
-                        <img class="card_img" src="img/estetica-facial.png" alt="Imagem do procedimento de estética facial">
-                        <h3 class="card_texto card_titulo">Estética Facial</h3>
-                        <p class="card_texto card_paragrafo">Realce sua beleza com nossa estética facial excepcional. Nossos profissionais dedicados criam transformações notáveis, destacando sua individualidade. Sinta a diferença agora!</p>
+                        <img class="card_img" src="img/brownie.png" alt="Imagem do procedimento de estética facial">
+                        <h3 class="card_texto card_titulo">Brownie</h3>
                     </div>
 
                     <div class="card">
-                        <img class="card_img" src="img/maquiagem.png" alt="Imagem de uma pessoa se maquiando">
-                        <h3 class="card_texto card_titulo">Maquiagem</h3>
-                        <p class="card_texto card_paragrafo">Explore a arte da maquiagem conosco. Nossa equipe habilidosa realça sua personalidade com visuais impressionantes. Experimente a maquiagem de qualidade e brilhe!</p>
+                        <img class="card_img" src="img/cone.png" alt="Imagem de uma pessoa se maquiando">
+                        <h3 class="card_texto card_titulo">Cone Trufado</h3>
+                    </div>
+
+                    <div class="card">
+                        <img class="card_img" src="img/doces.png" alt="Imagem de uma manicure trabalhando">
+                        <h3 class="card_texto card_titulo">Doces para festa</h3>
+                    </div>
+
+                    <div class="card">
+                        <img class="card_img" src="img/bolo.png" alt="Imagem do procedimento Mega Hair">
+                        <h3 class="card_texto card_titulo">Bolo</h3>
+                    </div>
+
+                    <div class="card">
+                        <img class="card_img" src="img/brownie.png" alt="Imagem do procedimento de estética facial">
+                        <h3 class="card_texto card_titulo">Brownie</h3>
+                    </div>
+
+                    <div class="card">
+                        <img class="card_img" src="img/cone.png" alt="Imagem de uma pessoa se maquiando">
+                        <h3 class="card_texto card_titulo">Cone Trufado</h3>
+                    </div>
+                    
+                    <div class="card">
+                        <img class="card_img" src="img/cone.png" alt="Imagem de uma pessoa se maquiando">
+                        <h3 class="card_texto card_titulo">Cone Trufado</h3>
                     </div>
 
                 </div>
 
             </section>
-            <section class="conheca"><h2 class="conheca_texto">Revele sua beleza interior. No nosso centro de estética, realçamos sua essência de forma natural e única.</h2></section>
+
+            <!-- Outra faixa com frase -->
+            <section class="conheca"><h2 class="conheca_texto">Confeitaria: A doçura que encanta</h2></section>
         </main>
 
         <footer class="rodape">

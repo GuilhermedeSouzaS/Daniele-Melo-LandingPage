@@ -1,3 +1,4 @@
+/* Animação do icone flutuante do whatsapp, é o que faz o botão pulsar */
 @keyframes animacao {
     0% {scale: 1;}
     50% {scale: 1.2;}
@@ -6,11 +7,12 @@
 }
 
 :root {
-    --fonte-estilosa: "Lobster Two";
+    --fonte-estilosa: "Concert One";
     --fonte-principal: "Oswald"
 
 }
 
+/* Definição padrão */
 
 html, body {
     height: 100%;
@@ -18,7 +20,7 @@ html, body {
     padding: 0;
     color: #141414;
     font-family: var(--fonte-principal);
-    font-weight: 300;
+    font-weight: 400;
 
 }
 
@@ -31,17 +33,23 @@ html, body {
 
 }
 
+/* Div ao redor do logo para posicionamento */
+
 .cabecalho_img {
     display: flex;
     justify-content: center;
 
 }
 
+/* Imagem do logo em si */
+
 .img_logo {
     width: 20%;
     height: 20%;
     
 }
+
+/* Define o posicionamento entre o texto e o formulário que estão no cabeçalho */
 
 .apresentacao-formulario {
     display: flex;
@@ -51,6 +59,8 @@ html, body {
     gap: 20px;
 
 }
+
+/* Texto do cabeçalho */
 
 .apresentacao {
     width: 500px;
@@ -63,9 +73,9 @@ html, body {
 .apresentacao-titulo {
     font-size: 2em;
     font-weight: 700;
-    text-shadow: 1px 1px 8px #141414;
     font-family: var(--fonte-estilosa);
     padding-bottom: 1.2em;
+    color: #6B5C78;
 
 }
 
@@ -74,6 +84,8 @@ html, body {
     padding-top: 1.5em;
 
 }
+
+/* Formulário */
 
 .secao_formulario {
     display: flex;
@@ -97,7 +109,6 @@ html, body {
     font-size: 1.5em;
     padding-bottom: 0.3em;
     font-weight: 500;
-    text-shadow: 1px 1px 8px #141414;
 
 }
 
@@ -125,6 +136,8 @@ html, body {
 
 }
 
+/* Mexe no posicionamento do label com exceção do label do text area */
+
 .formulario label:not(.label_mensagem) {
     position: absolute;
     bottom: 18px;
@@ -139,8 +152,10 @@ html, body {
 
 }
 
+/* Define o efeito no label ao input estar com foco, hover ou ao estar preenchido */
+
 .formulario input:focus + label, .formulario input:hover + label, .formulario input:valid + label {
-    color: #ff8f78;
+    color: #6B5C78;
     bottom: 37px;
     font-size: .7em;
     transition: all .5s ease;
@@ -152,7 +167,7 @@ html, body {
     margin-top: 0.5em;
     border: none;
     background: transparent;
-    border-bottom: solid 1px #ff8f78;
+    border-bottom: solid 1px #bb93e0;
     color: #141414;
     display: block;
     width: 100%;
@@ -163,7 +178,7 @@ html, body {
 .formulario_input:focus {
     border: none;
     outline: none;
-    border-bottom: solid 1px #ff8f78;
+    border-bottom: solid 1px #bb93e0;
 
 }
 
@@ -177,7 +192,7 @@ html, body {
     border-color: #e0e0e0;
     color: #141414;
     background: transparent;
-    border: solid 1px #ff8f78;
+    border: solid 1px #bb93e0;
     height: 1.8em;
     font-size: 1em;
     font-weight: 600;
@@ -189,12 +204,14 @@ html, body {
 .formulario_botao:hover {
     border-style: none;
     transition-duration: 0.5s;
-    background: #ff8f78;
+    background: #6B5C78;
     color: #e0e0e0;
     border-color: #141414;
     cursor: pointer;
 
 }
+
+/* Div ao redor do icone do whatsapp para definir posicionamento */
 
 .icone-whats {
     position: fixed;
@@ -203,18 +220,30 @@ html, body {
 
 }
 
+/* A imagem em si do icone do whatsapp */
+
 .icone_img {
     width: 70px;
     height: 70px;
     animation-name: animacao;
     animation-duration: 1.8s;
     animation-iteration-count: infinite;
+    z-index: 3;
 
 }
 
+.icone_img:hover {
+    animation-iteration-count: initial;
+    transform: scale(1.5);
+    transition-duration: .5s;
+
+}
+
+/* Faixa com a frase */
+
 .conheca {
     width: 100%;
-    background-image: url(img/fundo\ doodle.png);
+    background-image: url(img/fundo-doodle.png  );
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -229,9 +258,10 @@ html, body {
     font-size: 2em;
     padding: 3em;
     text-align: center;
-    text-shadow: 1px 1px 8px #141414;
 
 }
+
+/* Catálogo com os cards */
 
 .servicos {
     width: 100%;
@@ -249,18 +279,17 @@ html, body {
     font-weight: 400;
     padding: 1em;
     color: #141414;
-    text-shadow: 3px 3px 10px #141414;
     text-align: center;
 
 }
 
 .servicos_cards {
-    width: 100%;
+    width:  100%;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content:space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
     align-items: center;
 
 }
@@ -268,17 +297,17 @@ html, body {
 .card {
     width: 250px;
     min-width: 200px;
-    height: 350px;
+    height: 210px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    background-color: rgba(224, 224, 224, 0.5);
+    background-color: rgba(224, 224, 224, 1);
     box-shadow: rgba(20, 20, 20, 0.25) 0px 14px 28px, rgba(20, 20, 20, 0.22) 0px 10px 10px;
     border-radius: 10px;
     padding-bottom: 1em;
-    margin: 25px;
+    margin: 20px auto;
     transition-duration: .5s;
 
 }
@@ -297,21 +326,11 @@ html, body {
 
 .card_texto {
     padding: 1em;
+    font-size: 1.3em;
 
 }
 
-.card_titulo {
-    font-size: 1.5em;
-    font-weight: 400;
-    text-shadow: 1px 1px 5px #141414;
-
-}
-
-.card_paragrafo {
-    font-size: 1.1em;
-
-}
-
+/* Rodape com os links */
 
 .rodape {
     width: 100%;
@@ -379,12 +398,16 @@ html, body {
 
 @media (max-width: 893px) {
 
+    /* Animação do icone do facebook para mobile */
+    
     @keyframes face-icon {
         0% {background-image: url(img/icone-face-azul.svg);}
         50% {background-image: url(img/icone-face-preto.svg);}
         100% {background-image: url(img/icone-face-azul.svg);}
-
+        
     }
+
+    /* Animação do icone do instagram para mobile */
 
     @keyframes insta-icon {
         0% {background-image: url(img/icone-insta-colorido.svg);}
@@ -393,11 +416,15 @@ html, body {
 
     }
 
+    /* Muda o tamanho do logotipo para mobile */
+
     .img_logo {
         width: 60%;
         height: 60%;
 
     }
+
+    /* Conserta o posicionamento do texto do cabeçalho para mobile  */
 
     .apresentacao {
         text-align: center;
@@ -405,6 +432,8 @@ html, body {
         min-height: 330px;
 
     }
+
+    /* Insere as animações dos icones do facebook e do instagram */
 
     .icone_face {
         animation-name: face-icon;

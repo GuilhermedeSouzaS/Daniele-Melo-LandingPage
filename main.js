@@ -2,7 +2,7 @@ const sr = ScrollReveal({
     origin: 'bottom',
     distance: '50px',
     duration: 2000,
-    reset: true
+    reset: false
 });
 
 ScrollReveal().reveal('.card', { delay: 200 });
